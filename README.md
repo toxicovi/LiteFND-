@@ -37,11 +37,19 @@ Top Predictive Features:
 - anonymous (Indicates Fake)
 - conspiracy (Indicates Fake)
 ```
+## 📦 Citation and DOI
+
+If you use this software, please cite it using the following Zenodo DOI:
+
+[![DOI](https://zenodo.org/badge/984619477.svg)](https://doi.org/10.5281/zenodo.15752843)
+
+DOI: [10.5281/zenodo.15752843](https://doi.org/10.5281/zenodo.15752843)
+
 
 ## 📄 License
 MIT License
 
-Copyright (c) 2025 Ovi Pal
+Copyright (c) 2024 Ovi Pal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
