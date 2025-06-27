@@ -1,0 +1,215 @@
+@article{allcott2017social,
+  title={Social media and fake news in the 2016 election},
+  author={Allcott, Hunt and Gentzkow, Matthew},
+  journal={Journal of Economic Perspectives},
+  volume={31},
+  number={2},
+  pages={211--236},
+  year={2017}
+}
+
+@article{vosoughi2018spread,
+  title={The spread of true and false news online},
+  author={Vosoughi, Soroush and Roy, Deb and Aral, Sinan},
+  journal={Science},
+  volume={359},
+  number={6380},
+  pages={1146--1151},
+  year={2018}
+}
+
+@article{shu2017fake,
+  title={Fake news detection on social media: A data mining perspective},
+  author={Shu, Kai and Sliva, Amy and Wang, Suhang and Tang, Jiliang and Liu, Huan},
+  journal={ACM SIGKDD Explorations Newsletter},
+  volume={19},
+  number={1},
+  pages={22--36},
+  year={2017}
+}
+
+@inproceedings{devlin2019bert,
+  title={BERT: Pre-training of deep bidirectional transformers for language understanding},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  booktitle={Proceedings of NAACL},
+  year={2019}
+}
+
+@article{liu2019roberta,
+  title={RoBERTa: A robustly optimized BERT pretraining approach},
+  author={Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin},
+  journal={arXiv preprint arXiv:1907.11692},
+  year={2019}
+}
+
+@inproceedings{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom B and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  booktitle={NeurIPS},
+  year={2020}
+}
+
+@article{lipton2018mythos,
+  title={The mythos of model interpretability},
+  author={Lipton, Zachary C},
+  journal={Communications of the ACM},
+  volume={61},
+  number={10},
+  pages={36--43},
+  year={2018}
+}
+
+@inproceedings{ribeiro2016should,
+  title={"Why should I trust you?": Explaining the predictions of any classifier},
+  author={Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos},
+  booktitle={KDD},
+  pages={1135--1144},
+  year={2016}
+}
+
+@inproceedings{castillo2011information,
+  title={Information credibility on Twitter},
+  author={Castillo, Carlos and Mendoza, Marcelo and Poblete, Barbara},
+  booktitle={WWW},
+  pages={675--684},
+  year={2011}
+}
+
+@inproceedings{ruchansky2017csi,
+  title={CSI: A hybrid deep model for fake news detection},
+  author={Ruchansky, Natali and Seo, Sungyong and Liu, Yan},
+  booktitle={CIKM},
+  pages={797--806},
+  year={2017}
+}
+
+@inproceedings{perez2018automatic,
+  title={Automatic detection of fake news},
+  author={P{\'e}rez-Rosas, Ver{\'o}nica and Kleinberg, Bennett and Lefevre, Alexandra and Mihalcea, Rada},
+  booktitle={COLING},
+  pages={3391--3401},
+  year={2018}
+}
+
+@inproceedings{wang2018eann,
+  title={EANN: Event adversarial neural networks for multi-modal fake news detection},
+  author={Wang, Yaqing and Ma, Fenglong and Jin, Zhiwei and Yuan, Ye and Xun, Guangxu and Jha, Kishlay and Su, Lu and Gao, Jing},
+  booktitle={KDD},
+  pages={849--857},
+  year={2018}
+}
+
+@article{long2017fake,
+  title={Fake news detection through NLP},
+  author={Long, Yunfei and Lu, Qin and Xiang, Rong and Li, Minglei},
+  journal={IEEE Access},
+  year={2017}
+}
+
+@article{belinkov2019analysis,
+  title={Analysis methods in neural language processing: A survey},
+  author={Belinkov, Yonatan and Glass, James},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={7},
+  pages={49--72},
+  year={2019}
+}
+
+@inproceedings{zhang2015character,
+  title={Character-level convolutional networks for text classification},
+  author={Zhang, Xiang and Zhao, Junbo and LeCun, Yann},
+  booktitle={NIPS},
+  pages={649--657},
+  year={2015}
+}
+
+@inproceedings{joachims1998text,
+  title={Text categorization with support vector machines: Learning with many relevant features},
+  author={Joachims, Thorsten},
+  booktitle={ECML},
+  pages={137--142},
+  year={1998}
+}
+
+@inproceedings{rennie2003tackling,
+  title={Tackling the poor assumptions of naive Bayes text classifiers},
+  author={Rennie, Jason DM and Shih, Lawrence and Teevan, Jaime and Karger, David R},
+  booktitle={ICML},
+  pages={616--623},
+  year={2003}
+}
+
+@article{shu2020fakenewsnet,
+  title={FakeNewsNet: A data repository with news content, social context, and dynamic information},
+  author={Shu, Kai and Mahudeswaran, Deepak and Liu, Huan},
+  journal={Big Data},
+  year={2020}
+}
+
+@inproceedings{kumar2019tree,
+  title={Tree LSTM with hierarchical attention for fake news detection},
+  author={Kumar, Sumeet and Carley, Kathleen M},
+  booktitle={ACL},
+  year={2019}
+}
+
+@misc{bisaillon2020fake,
+  title={Fake and Real News Dataset},
+  author={Bisaillon, Cl{\'e}ment},
+  year={2020},
+  howpublished={Kaggle},
+  url={https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset}
+}
+
+@misc{honnibal2017spacy,
+  title={spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing},
+  author={Honnibal, Matthew and Montani, Ines},
+  year={2017},
+  howpublished={Online},
+  url={https://spacy.io}
+}
+
+@book{bird2009natural,
+  title={Natural Language Processing with Python},
+  author={Bird, Steven and Klein, Ewan and Loper, Edward},
+  publisher={O'Reilly Media},
+  year={2009}
+}
+
+@book{manning2008introduction,
+  title={Introduction to Information Retrieval},
+  author={Manning, Christopher D and Raghavan, Prabhakar and Sch{\"u}tze, Hinrich},
+  publisher={Cambridge University Press},
+  year={2008}
+}
+
+@inproceedings{ng2004feature,
+  title={Feature selection, L1 vs. L2 regularization, and rotational invariance},
+  author={Ng, Andrew Y},
+  booktitle={ICML},
+  pages={78--85},
+  year={2004}
+}
+
+@inproceedings{mccallum1998comparison,
+  title={A comparison of event models for naive Bayes text classification},
+  author={McCallum, Andrew and Nigam, Kamal},
+  booktitle={AAAI Workshop on Learning for Text Categorization},
+  pages={41--48},
+  year={1998}
+}
+
+@inproceedings{binns2018reducing,
+  title={'It's reducing a human being to a percentage': Citizens' concerns over algorithmic decision-making},
+  author={Binns, Reuben and Van Kleek, Max and Veale, Michael and Lyngs, Ulrik and Zhao, Jun and Shadbolt, Nigel},
+  booktitle={CHI},
+  pages={1--14},
+  year={2018}
+}
+
+@article{sanh2019distilbert,
+  title={DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter},
+  author={Sanh, Victor and Debut, Lysandre and Chaumond, Julien and Wolf, Thomas},
+  journal={arXiv preprint arXiv:1910.01108},
+  year={2019}
+}
