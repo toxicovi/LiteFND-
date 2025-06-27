@@ -1,28 +1,33 @@
 # LiteFND++: Lightweight Interpretable Fake News Detection
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15752844.svg)](https://doi.org/10.5281/zenodo.15752844)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Tests](https://github.com/toxicovi/LiteFND-/actions/workflows/tests.yml/badge.svg)](https://github.com/toxicovi/LiteFND-/actions/workflows/tests.yml)
 
-## 📖 Overview
+## 📖 Research Software Overview
 
-LiteFND++ is an open-source Python package for fake news detection that combines:
-- Optimized TF-IDF feature extraction
-- Dual-path ensemble (Logistic Regression + Naive Bayes)
-- Local Interpretable Model-agnostic Explanations (LIME)
+LiteFND++ is an academically rigorous Python package for fake news detection that implements:
 
-**Key Advantages**:
-- 🚀 18-20× faster than BERT on CPUs (12ms inference)
-- 🔍 Human-interpretable decision explanations
-- 📦 Lightweight (<350MB memory footprint)
+- **Novel Feature Engineering**: Hybrid TF-IDF with semantic normalization
+- **Dynamic Ensemble Learning**: Confidence-weighted LR + NB combination
+- **Explainable AI**: Domain-optimized LIME explanations
 
-## 📋 JOSS Compliance
+## 🔬 JOSS Compliance Features
 
-This software meets Journal of Open Source Software requirements through:
-- OSI-approved MIT License
-- Complete documentation
-- Automated test suite (85% coverage)
-- Permanent archival via Zenodo
+| Requirement               | Implementation |
+|---------------------------|----------------|
+| Open Source License       | MIT            |
+| Permanent Archival        | Zenodo DOI     |
+| Test Coverage             | 85% (pytest)  |
+| Documentation             | Wiki + Examples|
+| Substantial Codebase      | 500+ LOC       |
+
+## 🛠 Installation
+
+```bash
+pip install litefnd
+python -m spacy download en_core_web_sm
 - Substantial scholarly effort (500+ LOC)
 
 ## 🛠 Installation
