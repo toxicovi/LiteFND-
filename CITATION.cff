@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use LiteFND++ in your research, please cite it using the following metadata."
-title: "LiteFND++: A Lightweight and Interpretable Fake News Detection System"
+title: "Beyond Accuracy: A Dual-Path Lightweight and Interpretable Model for Fake News Detection"
 authors:
   - family-names: Pal
     given-names: Ovi
