@@ -69,3 +69,9 @@ model.fit(X_train, y_train)
 # Generate predictions with explanations
 prediction = model.predict(news_text)
 explanation = model.explain(news_text)
+
+## Archive
+
+This software has been archived with Zenodo:
+
+[![DOI](https://zenodo.org/badge/984619477.svg)](https://doi.org/10.5281/zenodo.15752843)
