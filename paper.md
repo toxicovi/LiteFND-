@@ -19,54 +19,19 @@ bibliography: paper.bib
 
 # Summary
 
-**LiteFND++** is an open-source Python package that provides a computationally efficient and interpretable solution for fake news detection. It implements a novel dual-path ensemble architecture combining:
+LiteFND++ is an open-source Python package that implements an innovative ensemble architecture for fake news detection, combining:
 
-1. **Logistic Regression** with L2 regularization (`C=1.8`)
-2. **Multinomial Naive Bayes** with Laplace smoothing (`α=0.03`)
+- Logistic Regression with L2 regularization (C=1.8)
+- Multinomial Naive Bayes with Laplace smoothing (α=0.03)
+- Novel confidence-based dynamic weighting
 
-Key technical features include:
-
-- Advanced text preprocessing pipeline (NER-aware token joining, semantic normalization)
-- Hybrid TF-IDF vectorization (word n-grams 1–4 and character n-grams 3–6)
-- Weighted soft-voting ensemble (65% Logistic Regression, 35% Naive Bayes)
-- Integrated LIME explanations for local model interpretability
-- CPU-optimized implementation requiring <16GB RAM
-
-LiteFND++ achieves state-of-the-art performance (F1 = 0.991) while being approximately **18–20× faster than transformer-based models like BERT** on CPU-only systems.
-
-# Statement of Need
-
-Despite recent advances, fake news detection systems continue to face key challenges:
-
-1. **High computational cost**: Transformer models are resource-intensive and often require GPU acceleration.
-2. **Limited interpretability**: Many high-performing models operate as black boxes.
-3. **Difficult deployment**: Existing models are rarely suitable for low-resource or real-time environments.
-
-LiteFND++ addresses these issues by providing:
-
-- A pure Python solution with minimal dependencies
-- Transparent, human-readable explanations via LIME
-- Compatibility with consumer-grade hardware (e.g., laptops, Raspberry Pi)
-- Open-source licensing for academic and commercial use
-
-This enables new applications such as:
-
-- Browser-based real-time verification tools
-- Lightweight mobile fact-checking apps
-- Offline detection in remote or low-bandwidth areas
-- Interactive educational tools to combat misinformation
-
-# Key Features
-
-## Core Functionality
+**Key Advantages**:
+- 🚀 18-20× faster than BERT on CPUs (12ms inference)
+- 🔍 Built-in explainability with enhanced LIME
+- 📱 Runs on edge devices (<350MB memory)
 
 ```python
-from litefnd import LiteFND
-
-# Initialize and train the model
-model = LiteFND()
-model.fit(X_train, y_train)
-
-# Predict and explain
-prediction = model.predict(news_text)
-explanation = model.explain(news_text)
+# Core dynamic weighting implementation
+def calculate_weights(y_pred_proba):
+    confidence = np.abs(y_pred_proba - 0.5) * 2
+    return 0.5 + (confidence - 0.5) * 0.3
