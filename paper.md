@@ -19,41 +19,42 @@ bibliography: paper.bib
 
 # Summary
 
-LiteFND++ is an open-source Python package that provides a computationally efficient and interpretable solution for fake news detection. The software implements a novel dual-path ensemble architecture combining:
+**LiteFND++** is an open-source Python package that provides a computationally efficient and interpretable solution for fake news detection. It implements a novel dual-path ensemble architecture combining:
 
-1. Logistic Regression with L2 regularization (C=1.8)
-2. Multinomial Naive Bayes with Laplace smoothing (α=0.03)
+1. **Logistic Regression** with L2 regularization (`C=1.8`)
+2. **Multinomial Naive Bayes** with Laplace smoothing (`α=0.03`)
 
 Key technical features include:
 
 - Advanced text preprocessing pipeline (NER-aware token joining, semantic normalization)
-- Hybrid TF-IDF vectorization (word n-grams 1-4 + character n-grams 3-6)
-- Weighted soft-voting ensemble (65% LR, 35% NB)
-- Integrated LIME explanations for model interpretability
+- Hybrid TF-IDF vectorization (word n-grams 1–4 and character n-grams 3–6)
+- Weighted soft-voting ensemble (65% Logistic Regression, 35% Naive Bayes)
+- Integrated LIME explanations for local model interpretability
 - CPU-optimized implementation requiring <16GB RAM
 
-The software achieves state-of-the-art performance (F1=0.991) while being 18-20× faster than transformer models like BERT on CPU-only systems.
+LiteFND++ achieves state-of-the-art performance (F1 = 0.991) while being approximately **18–20× faster than transformer-based models like BERT** on CPU-only systems.
 
 # Statement of Need
 
-Current fake news detection systems face three critical challenges:
+Despite recent advances, fake news detection systems continue to face key challenges:
 
-1. **Computational Intensity**: Transformer models require GPU acceleration
-2. **Interpretability Limitations**: Black-box decisions hinder trust
-3. **Deployment Barriers**: High resource requirements exclude edge devices
+1. **High computational cost**: Transformer models are resource-intensive and often require GPU acceleration.
+2. **Limited interpretability**: Many high-performing models operate as black boxes.
+3. **Difficult deployment**: Existing models are rarely suitable for low-resource or real-time environments.
 
-LiteFND++ addresses these needs through:
+LiteFND++ addresses these issues by providing:
 
-- Pure Python implementation with minimal dependencies
-- Human-readable explanations via LIME
-- Efficient execution on consumer hardware
-- MIT-licensed open source code
+- A pure Python solution with minimal dependencies
+- Transparent, human-readable explanations via LIME
+- Compatibility with consumer-grade hardware (e.g., laptops, Raspberry Pi)
+- Open-source licensing for academic and commercial use
 
-The software enables new applications in:
-- Browser-based real-time verification
-- Mobile fact-checking apps
-- Resource-constrained environments
-- Educational tools for media literacy
+This enables new applications such as:
+
+- Browser-based real-time verification tools
+- Lightweight mobile fact-checking apps
+- Offline detection in remote or low-bandwidth areas
+- Interactive educational tools to combat misinformation
 
 # Key Features
 
@@ -62,16 +63,10 @@ The software enables new applications in:
 ```python
 from litefnd import LiteFND
 
-# Initialize and train model
+# Initialize and train the model
 model = LiteFND()
 model.fit(X_train, y_train)
 
-# Generate predictions with explanations
+# Predict and explain
 prediction = model.predict(news_text)
 explanation = model.explain(news_text)
-
-## Archive
-
-This software has been archived with Zenodo:
-
-[![DOI](https://zenodo.org/badge/984619477.svg)](https://doi.org/10.5281/zenodo.15752843)
