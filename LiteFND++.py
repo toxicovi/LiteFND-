@@ -1,5 +1,5 @@
 """
-LiteFND++ v2: Advanced Fake News Detection with Novel Cognitive Features
+LiteFND++ : Advanced Fake News Detection with Novel Cognitive Features
 Key Innovations:
 1. Cognitive Load Quantifier - Detects manipulative language patterns
 2. Cross-Platform Consistency Analyzer - Identifies story variants
@@ -347,3 +347,4 @@ class LinguisticStyleAnalyzer:
             ) / len(markers)
             
         return scores
+
